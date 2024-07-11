@@ -1,0 +1,106 @@
+.auth-container {
+  top: 50px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  transition: transform 0.3s ease; /* Add transform animation */
+}
+
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-container label {
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.auth-container input[type="text"]:focus,
+.auth-container input[type="email"]:focus,
+.auth-container input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.auth-container .error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.auth-container button[type="submit"],
+.auth-container .toggle-button {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container button[type="submit"]:hover,
+.auth-container .toggle-button:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #555;
+}
+
+/* Animation for toggle button */
+.toggle-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+
+.toggle-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

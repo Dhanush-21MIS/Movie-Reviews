@@ -1,0 +1,33 @@
+/* StarRating.css */
+
+.star-rating {
+  font-size: 24px; /* Adjust the size of stars */
+}
+
+.star {
+  color: #ccc; /* Default color for empty stars */
+  cursor: pointer;
+}
+
+.filled {
+  color: #fdd835; /* Color for filled stars */
+}
+
+.half-filled {
+  position: relative; /* Ensure half-filled stars have a position */
+  color: #ccc; /* Color for half-filled stars */
+}
+
+.half-filled::before {
+  content: '★'; /* Use a star character */
+  position: absolute;
+  overflow: hidden;
+  color: gold; /* Default color for empty stars */
+  left: 0;
+  width: 50%; /* Adjust width to show half of the star */
+}
+
+/* Optional: Animation on hover */
+.star:hover {
+  transform: scale(1.2); /* Example hover effect */
+}
