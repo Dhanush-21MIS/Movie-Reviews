@@ -1,0 +1,144 @@
+/* Movie Details Page Layout */
+.movie-details-page {
+  padding-top: 20px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Movie Details Container */
+.movie-details-container {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto; /* Center horizontally */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px white;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  border : 2px solid black;
+}
+
+
+/* Movie Poster Styling */
+.movie-details-container img {
+  margin-right: 20px;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.movie-details-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Movie Details Content */
+.movie-details {
+  flex: 1;
+  font-weight: 600;
+  color: #333;
+  font-size: larger;
+}
+
+/* Movie Title */
+.movie-details h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #007bff;
+}
+
+/* Movie Details Paragraph */
+.movie-details p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+/* Review Button Styling */
+.movie-details button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.movie-details button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+/* Review Form Styling */
+.review-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjust width as needed */
+  max-width: 600px; /* Limit maximum width */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure form is on top of other content */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.review-form.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.review-form h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%; /* Use full width for form elements */
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.review-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.review-form button:first-of-type {
+  margin-right: 10px; /* Adjust the space between buttons */
+}
+
+.review-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
