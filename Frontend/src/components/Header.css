@@ -1,0 +1,69 @@
+/* Header.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke; /* Dark background color */
+  color: black; /* White text color */
+  padding: 10px 20px;
+  height: 60px; /* Adjust height as needed */
+}
+
+/* Left section (logo and title) */
+.navbar .left h1 {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .left h1 img.logo {
+  width: 50px; /* Adjust logo size */
+  height: auto;
+  margin-right: 10px; /* Space between logo and text */
+  border-radius: 10px;
+}
+
+.navbar .left h1 a {
+  color: black; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem; /* Adjust font size */
+}
+
+/* Right section (navigation links and buttons) */
+.navbar .right ul.nav-items {
+  list-style-type: none; /* Remove bullet points */
+  display: flex;
+  align-items: center;
+}
+
+.navbar .right ul.nav-items li {
+  margin-left: 20px; /* Space between navigation items */
+}
+
+.navbar .right ul.nav-items li a,
+.navbar .right ul.nav-items li button {
+  color: black; /* White text color */
+  text-decoration: none; /* Remove underline */
+  background: none; /* Transparent background */
+  border: none; /* Remove border */
+  cursor: pointer;
+  font-size: 1rem; /* Adjust font size */
+  padding: 10px; /* Adjust padding */
+  transition: opacity 0.2s ease-in-out; /* Smooth opacity transition */
+}
+
+.navbar .right ul.nav-items li a:hover,
+.navbar .right ul.nav-items li button:hover {
+  background-color: black;
+  border-radius:5px ;
+  color: gold;
+  transition: 0.3s;
+}

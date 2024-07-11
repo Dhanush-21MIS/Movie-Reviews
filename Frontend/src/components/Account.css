@@ -1,0 +1,52 @@
+.account-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-picture-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.no-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.user-details {
+  margin: 20px 0;
+}
+
+.stock-images {
+  margin-top: 20px;
+}
+
+.stock-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stock-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.stock-image:hover {
+  transform: scale(1.1);
+}

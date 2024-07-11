@@ -1,0 +1,234 @@
+/* Container for the movie list */
+.movie-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Filter buttons container */
+.filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* Style for each filter button */
+.filter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  /* Font properties */
+  font-family: Arial, sans-serif; /* Example font family */
+  font-size: 16px; /* Example font size */
+}
+
+.filter-buttons button:hover {
+  background-color: black;
+  color: gold;
+}
+
+/* Container for the movie cards */
+.movie-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Link style for movie cards */
+.movie-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Style for each movie card */
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  transform: scale(1.05);
+  background-color:#ddd;
+  color:rgb(255,0,0);
+}
+
+/* Style for the movie poster */
+.movie-poster {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Style for movie details */
+
+.movie-details h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.movie-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Additional style for the review form */
+.review-form {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.review-form h2 {
+  margin-bottom: 15px;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.review-form input,
+.review-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.review-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #0056b3;
+}
+
+ /* Pop up  */
+
+ .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the popup is above other content */
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  margin-bottom: 10px;
+}
+
+.popup p {
+  margin-bottom: 20px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+/* // Search bar */
+
+.search-bar {
+  display: flex;
+  justify-content: center; /* Align horizontally at the center */
+  align-items: center; /* Align vertically at the center */
+  margin-top: 20px; /* Adjust top margin as needed */
+  padding-bottom: 30px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: dodgerblue;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background-color: #0073e6;
+}
+
+.clear-search {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.clear-search:hover {
+  background-color: #ff3333;
+}
+
+.no-movies-found {
+  color: #ff6666;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
