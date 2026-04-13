@@ -23,7 +23,6 @@ A full-stack web application that allows users to browse movies, view details, a
 * React.js
 * Axios
 * CSS
-* 
 ### Backend
 
 * Node.js
